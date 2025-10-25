@@ -77,14 +77,13 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Header
 st.title("Edge Detection Visualizer")
 st.markdown('<p class="subtitle">Upload an image or choose a sample, then explore different edge detection algorithms with real-time parameter adjustments!</p>', unsafe_allow_html=True)
 
 # Sidebar
 st.sidebar.markdown("## Configuration")
 
-# Image Source Selection
+# Image Selection
 st.sidebar.markdown("### Image Source")
 image_source = st.sidebar.radio(
     "Select where to get your image:",
@@ -95,7 +94,7 @@ image_source = st.sidebar.radio(
 uploaded_file = None
 selected_sample = None
 
-# Upload or Sample Selection
+# Upload image or select from samples
 if image_source == "Upload Image":
     uploaded_file = st.sidebar.file_uploader(
         "Choose an image file",

@@ -2,9 +2,6 @@ import cv2
 import numpy as np
 
 def apply_sobel(gray, direction="Both", ksize=3):
-    """
-    Apply Sobel edge detection with adjustable kernel size and direction.
-    """
     sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=ksize)
     sobely = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=ksize)
 
