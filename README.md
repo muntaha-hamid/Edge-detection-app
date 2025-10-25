@@ -26,25 +26,6 @@
 
 
 
-└── filters/
-    ├── canny_filter.py
-    ├── sobel_filter.py
-    └── laplacian_filter.py
-└── outputs/
-    ├── canny_output.py
-    ├── sobel_output.py
-    └── laplacian_output.py
-├── sample_images/
-│   ├── abyssinian_cat.jpg
-│   ├── human.jpg
-    ├── road.jpg
-├── utils/
-    └── image_utils.py
-├── app.py
-├── README.md
-
-
-
 ### Outputs
 
 ###  Canny Edge Detection
